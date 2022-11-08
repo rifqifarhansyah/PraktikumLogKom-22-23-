@@ -1,0 +1,157 @@
+/* PP01_13521166.txt */
+
+Bagian 1
+ 
+Query:  | ?- suami(vito,X).
+ X = power
+
+Query:  | ?- kakak(elon_musk,X).
+ X = patrick
+
+Query:  | ?- cucu(_X,gojo), anak(Y,_X).
+ Y = anya
+
+Query:  | ?- keponakan(wesly, X), anaksulung(X), keponakan(wesly, _A), anaksulung(_A), X\=_A, usia(X,_B), usia(_A,_C), _B>_C.
+ X = van_rossum
+
+Query:  | ?- menikah(aqua,_X), saudara(_X,_Y), menikah(_Y,Z).
+ Z = vito
+
+Query:  | ?- cucu(X,khelli), anakbungsu(X).
+ X = patrick
+
+Query:  | ?- kakak(_A, X), anaksulung(_A), \+ (kakak(_B, X), _B \= _A).
+ X = bambang
+ X = power
+ X = patrick
+
+Query:  | ?- orangtua(X,_Y), kakak(_A,_Y), anaksulung(_A), anakbungsu(_Y), _A\=_Y, \+ (kakak(_B,_Y), _B\=_A).
+ X = gojo
+ X = lovelace
+ X = ave
+ X = aqua
+
+Query:  | ?- menantu(X,_Y), pria(_Y).
+ X = vito
+ X = power
+ X = ave
+ X = aqua
+ X = wulandari
+
+Query:  | ?- orangtua(X,_Y), wanita(X), saudara(_A,_Y), anaksulung(_Y), anakbungsu(_A).
+ X = indah
+ X = lovelace
+ X = aqua
+
+Query:  | ?- orangtua(X,_Y), wanita(X), usia(X,_A), usia(_Y,_B), (_A-_B)=<20. 
+ X = wulandari
+
+Query:  | ?- keturunan(X,gede), usia(X,_A), _A>=25.
+ X = van_rossum
+ X = bambang
+ X = vito
+ X = wesly
+
+Bagian 2
+
+Query: | ?- combination(5, 2, X).
+ X = 10
+
+Query: | ?- change(X, 14).
+ X = 4
+
+Query: | ?- fpb(14,18,X).
+ X = 2
+
+Query: | ?- mod(5,2,X).
+ X = 1
+
+Query: | ?- deret(5, Y).
+ Y = 10
+
+Bagian 3
+
+Query: | ?- min([9, -8, -7, 11, -10], Min).
+ Min = -10
+
+Query: | ?- max([9, -8, -7, 11, -10], Max).
+ Max = 11
+
+Query: | ?- range([9, -8, -7, 11, -10], Range).
+ Range = 21
+
+Query: | ?- count([9, -8, -7, 11, -10], Count).
+ Count = 5
+
+Query: | ?- sum([9, -8, -7, 11, -10], Sum).
+ Sum = -5
+
+Query: | ?- getIndex([1,2,5,-2,1,-4,-7], -2, Index).
+ Index = 4
+
+Query: | ?- getIndex([1,2,5,-2,1,-2,-7], -2, Index).
+ Index = 4
+
+Query: | ?- getIndex([1,2,5,-2,0,-2,-7], -11, Index).
+ no
+
+Query: | ?- swap([5,6,7,8], 1, 1, Result).
+ Result = [5,6,7,8]
+
+Query: | ?- swap([5,6,7,8], 1, 3, Result).
+ Result = [7,6,5,8]
+
+Query: | ?- swap([5,6,7,8,9], 4, 6, Result).
+ no
+
+Query: | ?- splitList([1,2,3,4,5,6], Ganjil, Genap).
+ Ganjil = [1,3,5]
+ Genap = [2,4,6]
+
+Query: | ?- splitList([1,2,3,4,5,6,7], Ganjil, Genap).
+ Ganjil = [1,3,5,7]
+ Genap = [2,4,6]
+
+Bagian Bonus
+
+Query: | ?- startCalculator.
+ Selamat Datang di Kalkulator Prolog!
+ Currently Saved Value is 0
+
+Query: | ?- add(5).
+ Old Saved Value is 0
+ New Saved Value is 5
+
+Query: | ?- subtract(7).
+ Old Saved Value is 5
+ New Saved Value is -2
+
+Query: | ?- divide(-2).
+ Old Saved Value is -2
+ New Saved Value is 1.0
+
+Query: | ?- multiply(0.5).
+ Old Saved Value is 1.0
+ New Saved Value is 0.5
+
+Query: | ?- getValue.
+ Currently Saved Value is 0.5
+
+Query: | ?- clearCalculator.
+ Old Saved Value is 0.5
+ New Saved Value is 0
+
+Query: | ?- exitCalculator.
+ Terima Kasih telah Menggunakan Kalkulator Prolog
+
+Query: | ?- add(6).
+ no
+
+Query: | ?- subtract(8).
+ no
+ 
+
+
+
+
+
